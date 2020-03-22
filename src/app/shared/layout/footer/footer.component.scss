@@ -1,8 +1,33 @@
 footer {
-  background: #292929 0% 0% no-repeat padding-box;
+  background: #3E3E3E;
+  color: #fff;
+
+  h3 {
+    font-weight: 200;
+  }
+
+  .footer-logo {
+    padding: 1rem;
+    max-height: 200px;
+  }
+
+  .dark-footer {
+
+    background: #292929;
+  }
+
+  li {
+    padding-right: 10px;
+  }
 
   i {
     font-size: 30px;
+
+  }
+
+  .Subscribe {
+    border: 1px solid #3E3E3E;
+    border-right: 0;
 
   }
 }

@@ -11,7 +11,6 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavComponent implements OnInit {
     isMenuCollapsed = true;
-    activeRoute = '';
     lang = '';
     constructor(
         private router: Router,
@@ -19,15 +18,12 @@ export class NavComponent implements OnInit {
         private translate: TranslateService,
     ) {
         this.router.events.pipe(filter((e) => e instanceof Scroll)).subscribe((e: any) => {
-            this.activeRoute = '';
             if (e.position) {
                 console.log(e.position);
                 this.viewportScroller.scrollToPosition(e.position);
-                this.activeRoute = '';
             } else if (e.anchor) {
                 console.log(e.anchor);
                 this.viewportScroller.scrollToAnchor(e.anchor);
-                this.activeRoute = e.anchor;
             } else {
                 this.viewportScroller.scrollToPosition([ 0, 0 ]);
             }

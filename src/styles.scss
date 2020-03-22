@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Cairo:200,300,400&display=swap');
 @import "./assets/fonts/line-awesome/css/line-awesome.min.css";
+//responsive breakpoints
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
 
 body {
   font-family: 'Cairo', sans-serif;
@@ -27,22 +32,45 @@ p {
   font-size: 20px;
 }
 
+.text-muted {
+  color: #7D7D7D !important;
+}
+
 h1 {
   padding: 60px 0 30px 0;
   color: #E58B2A;
   font-size: 40px;
   font-weight: 400;
-  position: relative;
+
+  span {
+    position: relative;
+
+    &::before {
+      content: url(./assets/points-right.svg);
+      position: absolute;
+      right: -15px;
+      top: -20px;
+    }
+
+    &::after {
+      content: url(./assets/points-left.svg);
+      position: absolute;
+      left: -15px;
+      bottom: -20px;
+    }
+  }
+
 }
 
-.btn.btn-success {
+.btn.btn-warning {
   font-weight: 200;
   background: #E58B2A 0% 0% no-repeat padding-box;
   border-radius: 5px;
   border: 1px #E58B2A;
+  color: #fff;
 }
 
-.text-success {
+.text-warning {
   color: #E58B2A;
 }
 
@@ -52,6 +80,7 @@ h1 {
 
 .form-card {
   background-color: #fff;
+  border: 1px solid #EBEBEB;
   box-shadow: 5px 5px 20px #0000000F;
   border-radius: 10px;
   position: relative;
@@ -64,10 +93,24 @@ h1 {
 
 }
 
+a.to-bottom {
+  position: absolute;
+  right: 50%;
+  bottom: 30px;
+
+  @media only screen and (max-width: $bp-small) {
+    bottom: -20px;
+  }
+}
+
 label {
   margin: 0;
 }
 
 ul {
   margin: 0;
+}
+
+.agm-map-container-inner {
+  border-radius: 10px;
 }

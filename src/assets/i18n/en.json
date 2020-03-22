@@ -3,51 +3,31 @@
       "HOME": "Home",
       "SIGNUP": "SignUp",
       "LOGIN": "Login",
-      "HOW-IT-WORKS": "How It Works",
-      "FAQS": "FAQS",
-      "REPORTS": "Reports",
-      "PROFILE": "Profile"
+      "ABOUT": "About US",
+      "CONTACT-US": "Contact US"
   },
-  "LOGIN": {
+  "HOME": {
+    "ABOUT": "About US",
+    "SERVICES": "Our Services"
+  },
+   "CONTACT": {
+    "LEAVE-MESSAGE": "Leave Us a Message",
+    "NAME": "Name",
     "EMAIL": "Email",
-    "PASSWORD": "Password",
-    "FORGOT-PASSWORD": "Forgot your password?",
-    "DONT-HAVE-ACC": "Don't have an account yet?",
+    "PHONE": "Phone",
+    "MESSAGE": "Message",
+    "ENTER-VALID-NAME": "Please enter a valid name.",
     "ENTER-VALID-EMAIL": "Please enter a valid email.",
-    "ENTER-VALID-PASSWORD": "Please enter a valid password."
-   },
-   "SIGNUP": {
-    "NAME": "Name",
-    "EMAIL": "Email",
-    "PASSWORD": "Password",
-    "CONFIRM-PASSWORD": "Confirm Password",
-    "ACCEPT-TERMS": "Accept Terms",
-    "PHONE": "Phone",
-    "REGISTER": "Register",
-    "SAVE": "Save",
-    "PRICES": "Prices",
-    "EDIT-PROFILE": "Edit Profile",
-    "ENTER-VALID-PASSWORD": "Please enter a valid password."
-   },
-   "USER": {
-    "PROFILE": "Profile",
-    "NAME": "Name",
-    "EMAIL": "Email",
-    "PHONE": "Phone",
-    "ORGANIZATIONS": "Organizations",
-    "NEW-ORGANIZATION": "New Organization",
-    "ADD-ORGANIZATION": "Add Organization",
-    "EDIT-ORGANIZATION": "Edit Organization",
-    "UPLOAD-LOGO": "Upload Logo",
-    "ADDRESS": "Address",
-    "INDUSTRY": "Industry",
-    "WEBSITE": "Website",
-    "CURRENCY": "Currency",
-    "POBOX": "PO Box",
-    "TAX-NO": "Tax registration no",
-    "COMMERCIAL-NO": "Commercial registration no",
-    "VAT-NO": "VAT number",
-    "EX-SUMMARY": "Executive Summary",
-    "SAVE": "Save"
+    "ENTER-VALID-PHONE": "Please enter a valid phone number.",
+    "ENTER-VALID-MESSAGE": "Please enter a valid message.",
+    "SEND": "Send"
+  },
+  "FOOTER": {
+    "SOCIAL-MEDIA": "Social Media",
+    "SUBSCRIBE": "Subscribe",
+    "SUBSCRIBE-MESSAGE": "Subscribe to our newsletters and stay updated"
+  },
+  "BTN": {
+    "MORE": "More"
   }
 }

@@ -6,7 +6,7 @@ $bp-small: 37.5em; //600px
 
 .header {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), url('./../../../../assets/preview-bg.png') center center no-repeat;
-  height: calc(100vh - 86px);
+  height: calc(100vh - 76px);
   background-size: cover;
 
   .header-title {
@@ -22,26 +22,6 @@ $bp-small: 37.5em; //600px
     color: #FFF0E1;
     font-size: 2.5rem;
     font-weight: 200;
-  }
-
-  a {
-    position: absolute;
-    right: 50%;
-    bottom: 30px;
-
-    @media only screen and (max-width: $bp-small) {
-      bottom: -20px;
-    }
-  }
-}
-
-.form-card {
-  width: 98%;
-  height: 100%;
-  margin-left: auto;
-
-  &::after {
-    width: 115%;
   }
 
 }
@@ -71,10 +51,7 @@ ngb-carousel {
 }
 
 .about,
-.how-it-works,
-.faqs,
-.partners,
-.timeline-container {
-  padding: 115px 0;
-
+.services,
+.partners {
+  padding: 6rem 0;
 }
