@@ -1,0 +1,133 @@
+<section class="header">
+  <div class="container h-100">
+    <div class="row  h-100">
+      <div class="text-center align-self-center col-md-12">
+        <h1 class="header-title pb-0">
+          PaTeXs.
+        </h1>
+
+        <ngx-typed-js class="text-light-orange" [loop]="true" [showCursor]="false"
+          [strings]="['cellence.', 'perience.', 'pansion.']" [fadeOut]="true" [typeSpeed]="80">
+          eX <span class="typing"></span> we have the 'X'
+        </ngx-typed-js>
+      </div>
+    </div>
+    <a routerLink="/home" (click)="onClick('how-it-works')"><img src="./../../../../assets/arrow.png" alt="Next"></a>
+  </div>
+</section>
+<!--
+<section class="how-it-works" id='how-it-works'>
+
+  <div class="container">
+    <h1> {{homeData.howItWorks.title}}
+    </h1>
+    <div class="row">
+      <div class="col-md-6 p-0 my-3" *ngFor="let section of homeData.howItWorks.sections; let i = index;">
+        <div class="form-card p-4" [ngClass]="{'no-after' : i < homeData.howItWorks.sections.length - 1 }">
+          <h2 class=" my-4">{{section.title}}</h2>
+          <p>{{section.description}}</p>
+          <ul *ngFor="let item of section.list">
+            <li>{{item}}</li>
+          </ul>
+          <p>{{section.extraDescription}}</p>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-12 p-0">
+        <div class="form-card w-100 no-after p-4">
+          <h2 class=" my-4">{{homeData.howItWorks.ideation.title}}</h2>
+          <p>{{homeData.howItWorks.ideation.description}}</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+ <section class="about" id='about'>
+
+  <div class="container">
+    <h1>{{homeData.about.title}}</h1>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="mt-5 text-lowercase">{{homeData.about.description}}</p>
+        <img [src]="homeData.about.image" alt="about image">
+
+      </div>
+    </div>
+  </div>
+  <div class="container" *ngIf="homeData.about.sections">
+    <div class="row">
+
+      <ngb-carousel #carousel interval="1000" [showNavigationArrows]="false" [showNavigationIndicators]="false">
+        <ng-template ngbSlide *ngFor="let section of homeData.about.sections">
+          <div class="form-card text-left no-after">
+            <div class="row">
+              <div class="col-md-2">
+                <div class="d-flex justify-content-center about-section-icon">
+                  <img [src]="section.icon" alt="section icon">
+
+                </div>
+              </div>
+              <div class="col-md-10">
+                <h2 class="mb-4">{{section.title}}</h2>
+                <p class="pr-3" [innerHtml]="section.description"></p>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="faqs" id='faqs'>
+
+  <div class="container">
+    <h1>{{homeData.faqs.title}}</h1>
+    <div class="row">
+      <div class="col-md-12 form-card py-4 px-4">
+        <div class="my-3" *ngFor="let faq of homeData.faqs.questions;let i = index;">
+          <ngb-accordion #a="ngbAccordion" activeIds="custom-panel-0">
+            <ngb-panel id="custom-panel-{{i}}">
+              <ng-template ngbPanelHeader let-opened="opened">
+                <button ngbPanelToggle [ngClass]="{'closed': !opened}"
+                  class="d-flex align-items-center justify-content-between p-3 w-100">
+                  <h5 [ngClass]="{'text-success' : opened}" class="m-0">{{faq.question}}</h5>
+                  <img *ngIf="opened" src="./../../../../assets/up.svg" alt="up cursor">
+                  <img *ngIf="!opened" src="./../../../../assets/down.svg" alt="down cursor">
+                </button>
+              </ng-template>
+              <ng-template ngbPanelContent>
+                <p>{{faq.answer}}</p>
+              </ng-template>
+            </ngb-panel>
+          </ngb-accordion>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="partners" id='partners'>
+
+  <div class="container">
+    <h1>{{homeData.partners.title}}</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="images d-flex flex-wrap justify-content-center">
+          <img *ngFor="let img of homeData.partners.images" class="img-fluid p-2 Responsive " [src]="img"
+            alt="partner logo">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
