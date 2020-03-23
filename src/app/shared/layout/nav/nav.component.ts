@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
+import { Component, OnInit } from '@angular/core';
 import { Router, Scroll } from '@angular/router';
-import { filter } from 'rxjs/operators';
 import { TranslateService } from '@ngx-translate/core';
+import { filter } from 'rxjs/operators';
 
 @Component({
     selector: 'app-nav',
@@ -12,6 +12,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class NavComponent implements OnInit {
     isMenuCollapsed = true;
     lang = '';
+    servicesActive = 'our-services';
     constructor(
         private router: Router,
         private viewportScroller: ViewportScroller,
@@ -32,6 +33,9 @@ export class NavComponent implements OnInit {
 
     ngOnInit(): void {
         this.lang = this.translate.getDefaultLang();
+    }
+    onServicesClick(router) {
+        this.servicesActive = router;
     }
     switchLanguage(language: string) {
         this.translate.use(language);

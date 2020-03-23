@@ -4,11 +4,41 @@
       "SIGNUP": "SignUp",
       "LOGIN": "Login",
       "ABOUT": "About US",
+      "SERVICES": "Services",
+      "OUR-SERVICES": "Our Services",
+      "IT-SERVICES": "IT Services",
+      "CONSULTANCY": "Consultancy",
+      "OUTSOURCING": "Outsourcing",
+      "TRAINING": "Training",
+      "CAREERS": "Careers",
       "CONTACT-US": "Contact US"
   },
   "HOME": {
     "ABOUT": "About US",
     "SERVICES": "Our Services"
+  },
+  "ABOUT": {
+    "ABOUT": "About US",
+    "OUR-TEAM": "Our Team"
+  },
+  "CAREERS": {
+    "CAREERS": "Careers",
+    "APPLY-FOR-JOB": "Apply For Job",
+    "ABOUT-THE-JOB": "About the Job",
+    "JOB-REQUIREMENTS": "Job Requirements",
+    "JOB-APPLICATION": "Job Application",
+    "JOB-MESSAGE": "Please complete the form below to apply for a position with us.",
+    "TITLE": "Title",
+    "FULL-NAME": "Full Name",
+    "EMAIL": "Email",
+    "PHONE": "Phone Number",
+    "UPLOAD": "Upload",
+    "CHOOSE-FILE": "Choose file",
+    "APPLY": "Apply"
+  },
+  "SERVICES": {
+    "OUR-SERVICES": "Our Services"
+
   },
    "CONTACT": {
     "LEAVE-MESSAGE": "Leave Us a Message",

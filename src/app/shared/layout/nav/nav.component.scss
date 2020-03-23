@@ -1,3 +1,9 @@
+//responsive breakpoints
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
 nav {
   background: #FFFFFF 0% 0% no-repeat padding-box !important;
   box-shadow: 0px 15px 30px #0000000F;
@@ -15,28 +21,43 @@ nav {
     border-bottom: 1px solid #E58B2A;
   }
 
-  .nav-link.remove-active {
-    color: #000;
-    border-bottom: unset;
-  }
-
   .dropdown {
+
+
+
     .dropdown-menu.show {
       background: #FFFFFF 0% 0% no-repeat padding-box;
       border-radius: 10px;
       border: 0;
-      width: 345px;
       box-shadow: 5px 5px 20px #0000000F;
-      margin-top: 40px;
+      margin-top: 20px;
+
+      div {
+        .dropdown-item {
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-left: 15px;
+          width: 170px;
+          margin: 5px 0;
+          border-radius: 5px;
+          transition: all .2s ease-in-out;
+
+          &:focus {
+            outline: none;
+          }
+
+          &.active,
+          &:hover {
+            color: #fff;
+            background: #E58B2A;
+          }
+        }
+      }
     }
 
     .dropdown-toggle {
-      border-radius: 23px;
+      border-radius: 10px;
       border: 1px #E58B2A;
-
-      &::after {
-        display: none;
-      }
     }
   }
 
@@ -47,6 +68,11 @@ nav {
     span {
       img {
         height: 50px;
+
+        @media only screen and (max-width: $bp-medium) {
+          height: 30px;
+        }
+
         max-height: 50px;
       }
     }

@@ -1,0 +1,35 @@
+<section class="header">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <h1><span>{{'CAREERS.CAREERS' | translate}} – {{'CAREERS.APPLY-FOR-JOB' | translate}}</span></h1>
+
+    </div>
+  </div>
+</section>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-12" *ngIf="selectedJob">
+      <h2>{{selectedJob.title}}</h2>
+
+      <div class="mt-5">
+        <p>{{'CAREERS.ABOUT-THE-JOB' | translate}}</p>
+        <ul>
+          <li class="text-muted" *ngFor="let about of selectedJob.about">{{about}}</li>
+        </ul>
+      </div>
+
+      <div class="mt-5">
+        <p>{{'CAREERS.JOB-REQUIREMENTS' | translate}}</p>
+        <ul>
+          <li class="text-muted" *ngFor="let item of selectedJob.requirements">{{item}}</li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="col-md-6 col-sm-10 mt-5 mx-auto ">
+      <div class="card">
+        <app-apply></app-apply>
+      </div>
+    </div>
+  </div>
+</div>

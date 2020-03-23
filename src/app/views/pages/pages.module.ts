@@ -10,9 +10,13 @@ import { ContactComponent } from './contact/contact.component';
 import { AgmCoreModule } from '@agm/core';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
+import { CareersComponent } from './careers/careers.component';
+import { JobComponent } from './careers/job/job.component';
+import { ApplyComponent } from './careers/apply/apply.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
-    declarations: [ HomeComponent, AboutComponent, ContactComponent ],
+    declarations: [ HomeComponent, AboutComponent, ContactComponent, CareersComponent, JobComponent, ApplyComponent, ServicesComponent ],
     imports: [
         CommonModule,
         PagesRoutingModule,

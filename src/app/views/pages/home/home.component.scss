@@ -11,6 +11,10 @@ $bp-small: 37.5em; //600px
 
   .header-title {
     font-size: 6rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 3rem;
+    }
   }
 
   .typing {
@@ -22,6 +26,10 @@ $bp-small: 37.5em; //600px
     color: #FFF0E1;
     font-size: 2.5rem;
     font-weight: 200;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
   }
 
 }
@@ -54,4 +62,8 @@ ngb-carousel {
 .services,
 .partners {
   padding: 6rem 0;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0;
+  }
 }

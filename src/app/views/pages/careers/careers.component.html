@@ -1,0 +1,28 @@
+<section class="careers-slider">
+  <ngb-carousel [showNavigationArrows]="false" *ngIf="silder">
+    <ng-template ngbSlide *ngFor="let item of silder">
+      <div class="picsum-img-wrapper">
+        <img [src]="item.image" alt="Random first slide">
+      </div>
+      <div class="carousel-caption text-left">
+        <h1 class="text-white font-weight-lighter">{{item.title}}</h1>
+        <p class="text-white">{{item.description}}</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</section>
+<section class="careers mt-5">
+  <div class="container">
+    <h1><span>{{'CAREERS.CAREERS' | translate}}</span></h1>
+    <div class="row mt-5">
+      <div class="col-md-6 my-3" *ngFor="let job of jobs">
+        <div class="job-container" [ngStyle]="{
+    background:' linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('+ job.image +')'}">
+          <h2 class="text-white font-weight-lighter p-4">{{job.title}}</h2>
+          <button class="btn btn-warning btn-lg m-4"
+            [routerLink]="['/careers/', job.id]">{{'CAREERS.APPLY' | translate}}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

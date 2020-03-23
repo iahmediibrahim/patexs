@@ -1,3 +1,9 @@
+//responsive breakpoints
+$bp-largest: 75em; //1200px
+$bp-large: 62.5em; //1000px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
 footer {
   background: #3E3E3E;
   color: #fff;
@@ -9,6 +15,12 @@ footer {
   .footer-logo {
     padding: 1rem;
     max-height: 200px;
+
+    @media only screen and (max-width: $bp-medium) {
+      height: 100px;
+      padding: 0;
+    }
+
   }
 
   .dark-footer {

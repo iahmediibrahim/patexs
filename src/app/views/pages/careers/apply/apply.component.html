@@ -1,0 +1,36 @@
+   <div class="p-4">
+     <h5 class="mb-2">{{'CAREERS.JOB-APPLICATION' | translate}}</h5>
+     <span class="text-muted d-inline-block mb-4">{{'CAREERS.JOB-MESSAGE' | translate}}</span>
+     <form (submit)="onApply(form)" #form="ngForm">
+       <div class="form-group mb-3">
+         <label for="name">{{'CAREERS.TITLE' | translate}}</label>
+         <input class="form-control" type="text" required ngModel name="name" #name="ngModel">
+
+       </div>
+       <div class="form-group mb-3">
+         <label for="name">{{'CAREERS.FULL-NAME' | translate}}</label>
+         <input class="form-control" type="text" required ngModel name="name" #name="ngModel">
+       </div>
+
+       <div class="form-group mb-3">
+         <label for="name">{{'CAREERS.PHONE' | translate}}</label>
+         <input class="form-control" type="number" required ngModel name="phone" #phone="ngModel">
+       </div>
+       <div class="form-group mb-3">
+         <label for="name">{{'CAREERS.EMAIL' | translate}}</label>
+         <input class="form-control" required email name="email" #email="ngModel" ngModel type="email">
+       </div>
+       <div class="form-group   mb-3">
+         <label for="name">{{'CAREERS.UPLOAD' | translate}}</label>
+         <div class="custom-file d-inline-block">
+           <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+           <label class="custom-file-label pr-0"
+             for="validatedCustomFile">{{'CAREERS.CHOOSE-FILE' | translate}}...</label>
+           <div class="invalid-feedback">Example invalid custom file feedback</div>
+         </div>
+       </div>
+       <div class="text-center mt-4">
+         <button class="btn btn-warning btn-lg" type="submit">{{'CAREERS.APPLY' | translate}}</button>
+       </div>
+     </form>
+   </div>

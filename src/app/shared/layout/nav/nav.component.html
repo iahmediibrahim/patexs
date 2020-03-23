@@ -20,31 +20,37 @@
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['about']" routerLinkActive="active">{{'NAV.ABOUT' | translate}}</a>
         </li>
+
+        <li class="nav-item dropdown" ngbDropdown display="dynamic">
+          <a class="nav-link cursor-pointer" id="dropdownBasic1" [routerLink]="servicesActive" routerLinkActive="active"
+            ngbDropdownToggle>{{'NAV.SERVICES' | translate}}</a>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <div class="p-2 text-left">
+              <button ngbDropdownItem [routerLink]="['our-services']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+                (click)="onServicesClick('our-services')">{{'NAV.OUR-SERVICES' | translate}}</button>
+              <button ngbDropdownItem [routerLink]="['/our-services/', 'it-services']"
+                (click)="onServicesClick(['/our-services/', 'it-services'])" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">{{'IT-SERVICES' | translate}}</button>
+              <button ngbDropdownItem [routerLink]="['/our-services/', 'consultancy']"
+                (click)="onServicesClick(['/our-services/', 'consultancy'])" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">{{'NAV.CONSULTANCY' | translate}}</button>
+              <button ngbDropdownItem [routerLink]="['/our-services/', 'outsourcing']"
+                (click)="onServicesClick(['/our-services/', 'outsourcing'])" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">{{'NAV.OUTSOURCING' | translate}}</button>
+              <button ngbDropdownItem [routerLink]="['/our-services/', 'training']"
+                (click)="onServicesClick(['/our-services/', 'training'])" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">{{'NAV.TRAINING' | translate}}</button>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['careers']" routerLinkActive="active">{{'NAV.CAREERS' | translate}}</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link" [routerLink]="['contact-us']"
             routerLinkActive="active">{{'NAV.CONTACT-US' | translate}}</a>
         </li>
-        <!--
-
-        <li class="nav-item">
-          <a class="nav-link" [routerLink]="['home']" [fragment]="'faqs'"
-            [ngClass]="{'active': activeRoute === 'faqs', 'remove-active': activeRoute !== 'faqs'}">{{'NAV.FAQS' | translate}}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="user/generate" routerLinkActive="active">{{'NAV.REPORTS' | translate}}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="user/profile" routerLinkActive="active">{{'NAV.PROFILE' | translate}}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="auth/signup" routerLinkActive="active">{{'NAV.SIGNUP' | translate}}</a>
-        </li> -->
-        <!-- <li class="nav-item dropdown d-flex align-items-center" ngbDropdown display="dynamic">
-          <button class="btn btn-success" id="dropdownBasic1" ngbDropdownToggle>{{'NAV.LOGIN' | translate}}</button>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          </div>
-        </li> -->
-
         <ng-container *ngIf="lang === 'en'">
           <button class="btn btn-link text-dark" (click)="switchLanguage('ar')">ع</button>
         </ng-container>
