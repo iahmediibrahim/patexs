@@ -34,23 +34,7 @@ $bp-small: 37.5em; //600px
 
 }
 
-ngb-carousel {
-  &:focus {
-    outline: none;
-  }
-
-  .about-section-icon {
-    img {
-      width: 80px;
-      background: #E58B2A21 0% 0% no-repeat padding-box;
-      border-radius: 10px;
-      padding: .8rem 1rem;
-    }
-  }
-}
-
 .partners .images {
-  // background: url('./../../../../assets/partners-bg.svg') center no-repeat;
   background-size: contain;
 
   img {
@@ -61,7 +45,7 @@ ngb-carousel {
 .about,
 .services,
 .partners {
-  padding: 6rem 0;
+  padding: 3rem 0;
 
   @media only screen and (max-width: $bp-medium) {
     padding: 0;

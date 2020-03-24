@@ -4,3 +4,34 @@
   background-size: cover;
 
 }
+
+.content {
+
+  .form-card {
+    border: 1px solid rgba(0, 0, 0, .125);
+
+  }
+}
+
+.services {
+
+  .form-card {
+    border: 1px solid rgba(0, 0, 0, .125);
+    box-shadow: none;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      box-shadow: 5px 5px 20px #0000000F;
+
+    }
+
+
+  }
+
+  .tags {
+    span {
+      font-size: 100%;
+      font-weight: 400;
+    }
+  }
+}

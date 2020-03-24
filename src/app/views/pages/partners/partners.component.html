@@ -1,0 +1,13 @@
+<section class="partners" id='partners'>
+
+  <div class="container">
+    <h1><span>{{partners.title}}</span></h1>
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-2" style="height: 120px" *ngFor="let img of partners.images">
+        <div class="images   h-100 d-flex justify-content-center   text-center">
+          <img class="img-fluid p-2 Responsive " [src]="img" alt="partner logo">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

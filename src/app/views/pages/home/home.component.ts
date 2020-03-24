@@ -29,10 +29,10 @@ export class HomeComponent implements OnInit {
             We maximize the benefits of our dep...
            `,
             sections: [
-                { image: './../../../../assets/it-services.svg', title: 'it-services' },
-                { image: './../../../../assets/consultancy.svg', title: 'Consultancy' },
-                { image: './../../../../assets/outsourcing.svg', title: 'Outsourcing' },
-                { image: './../../../../assets/training.svg', title: 'training' },
+                { image: './../../../../assets/it-services.svg', title: 'IT Services', id: 'it-services' },
+                { image: './../../../../assets/consultancy.svg', title: 'Consultancy', id: 'consultancy' },
+                { image: './../../../../assets/outsourcing.svg', title: 'Outsourcing', id: 'outsourcing' },
+                { image: './../../../../assets/training.svg', title: 'Training', id: 'training' },
             ],
         },
         partners: {
@@ -46,7 +46,7 @@ export class HomeComponent implements OnInit {
         this.viewportScroller.scrollToAnchor(elementId);
     }
     ngOnInit(): void {
-        for (let i = 1; i <= 20; i++) {
+        for (let i = 1; i <= 4; i++) {
             this.homeData.partners.images.push(`./../../../../assets/logos/${i}.png`);
         }
     }

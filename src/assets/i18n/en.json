@@ -5,6 +5,7 @@
       "LOGIN": "Login",
       "ABOUT": "About US",
       "SERVICES": "Services",
+      "PARTNERS": "Partners",
       "OUR-SERVICES": "Our Services",
       "IT-SERVICES": "IT Services",
       "CONSULTANCY": "Consultancy",
@@ -37,7 +38,14 @@
     "APPLY": "Apply"
   },
   "SERVICES": {
-    "OUR-SERVICES": "Our Services"
+    "SERVICES": "Services",
+    "OUR-SERVICES": "Our Services",
+    "IT-SERVICES": "IT Services",
+    "CONSULTANCY": "Consultancy",
+    "OUTSOURCING": "Outsourcing",
+    "TRAINING": "Training",
+    "HIGHLIGHT": "Our team is committed to provide IT Services with:",
+    "TECH-STACK": "Technology Stack"
 
   },
    "CONTACT": {

@@ -15,3 +15,103 @@
         alt="Next"></a>
   </div>
 </section>
+
+<section class="content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="my-5">{{'SERVICES.HIGHLIGHT' | translate}}</h4>
+      </div>
+      <div class="col-md-4 my-3" *ngFor="let item of servicesData.sections">
+        <div class="form-card p-4 d-flex align-items-center">
+          <img class="img-fluid pr-4" [src]="item.image" alt="image">
+          <h4 class="m-0">{{item.title}}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class=" "><span>{{'SERVICES.SERVICES' | translate}}</span></h1>
+      </div>
+      <div class="col-md-6 my-3" *ngFor="let item of servicesData.services">
+        <div class="form-card h-100 p-4">
+          <div class="row h-100">
+            <div class="col-md-2">
+              <img class="img-fluid" [src]="item.image" alt="image">
+            </div>
+            <div class="col-md-10" style="display: grid;">
+              <h4 class="mt-2">{{item.title}}</h4>
+              <p class="my-3">{{item.description}}</p>
+              <ng-container *ngIf="item.tags">
+                <div class="tags">
+                  <span class="badge badge-pill badge-light px-3 py-2 mr-3 mt-3"
+                    *ngFor="let item of item.tags">{{item}}</span>
+                </div>
+              </ng-container>
+              <ng-container *ngIf="item.list">
+                <ul>
+                  <li class="" *ngFor="let item of item.list">{{item}}</li>
+                </ul>
+              </ng-container>
+              <div class="text-right">
+
+                <button class="btn btn-warning mt-4 btn-lg ml-2"
+                  [routerLink]="['/our-services/', item.id]">{{ 'BTN.MORE' | translate}}</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="container my-5" style="padding: 0 20rem;">
+  <hr>
+</div>
+
+<section class="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 my-3" *ngFor="let stack of servicesData.stacks">
+        <div class="form-card h-100 p-4">
+          <div class="row">
+            <div class="col-md-2">
+              <img class="img-fluid" [src]="stack.image" alt="image">
+            </div>
+            <div class="col-md-10">
+              <h4 class="mt-2">{{stack.title}}</h4>
+              <div class="tags">
+                <span class="badge badge-pill badge-light px-3 py-2 mr-3 mt-3"
+                  *ngFor="let item of stack.tags">{{item}}</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class=" "><span>{{'SERVICES.TECH-STACK' | translate}}</span></h1>
+      </div>
+      <div class="col-md-12">
+        <div class="tags">
+          <span class="badge badge-pill badge-light px-3 py-2 mr-3 mt-3"
+            *ngFor="let item of servicesData.techStack">{{item}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -14,9 +14,11 @@ import { CareersComponent } from './careers/careers.component';
 import { JobComponent } from './careers/job/job.component';
 import { ApplyComponent } from './careers/apply/apply.component';
 import { ServicesComponent } from './services/services.component';
+import { ServiceComponent } from './services/service/service.component';
+import { PartnersComponent } from './partners/partners.component';
 
 @NgModule({
-    declarations: [ HomeComponent, AboutComponent, ContactComponent, CareersComponent, JobComponent, ApplyComponent, ServicesComponent ],
+    declarations: [ HomeComponent, AboutComponent, ContactComponent, CareersComponent, JobComponent, ApplyComponent, ServicesComponent, ServiceComponent, PartnersComponent ],
     imports: [
         CommonModule,
         PagesRoutingModule,
