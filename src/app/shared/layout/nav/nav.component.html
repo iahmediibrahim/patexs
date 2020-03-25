@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg sticky-top ">
+<nav class="navbar navbar-expand-lg sticky-top">
   <div class="container">
 
     <a class="navbar-brand" routerLink="/home">
@@ -24,25 +24,21 @@
           <a class="nav-link" [routerLink]="['partners']" routerLinkActive="active">{{'NAV.PARTNERS' | translate}}</a>
         </li>
 
-        <li class="nav-item dropdown" ngbDropdown display="dynamic">
-          <a class="nav-link cursor-pointer" id="dropdownBasic1" [routerLink]="servicesActive" routerLinkActive="active"
+        <li class="nav-item dropdown" ngbDropdown #myDrop="ngbDropdown" display="dynamic">
+          <a class="nav-link cursor-pointer" (mouseenter)="$event.stopPropagation(); myDrop.open();" id="dropdownBasic1"
+            [routerLink]="['our-services']" routerLinkActive="active"
             ngbDropdownToggle>{{'NAV.SERVICES' | translate}}</a>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <div class="p-2 text-left">
               <button ngbDropdownItem [routerLink]="['our-services']" routerLinkActive="active"
-                [routerLinkActiveOptions]="{exact: true}"
-                (click)="onServicesClick('our-services')">{{'NAV.OUR-SERVICES' | translate}}</button>
-              <button ngbDropdownItem [routerLink]="['/our-services/', 'it-services']"
-                (click)="onServicesClick(['/our-services/', 'it-services'])" routerLinkActive="active"
-                [routerLinkActiveOptions]="{exact: true}">{{'IT-SERVICES' | translate}}</button>
-              <button ngbDropdownItem [routerLink]="['/our-services/', 'consultancy']"
-                (click)="onServicesClick(['/our-services/', 'consultancy'])" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">{{'NAV.OUR-SERVICES' | translate}}</button>
+              <button ngbDropdownItem [routerLink]="['/our-services/', 'it-services']" routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">{{'NAV.IT-SERVICES' | translate}}</button>
+              <button ngbDropdownItem [routerLink]="['/our-services/', 'consultancy']" routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact: true}">{{'NAV.CONSULTANCY' | translate}}</button>
-              <button ngbDropdownItem [routerLink]="['/our-services/', 'outsourcing']"
-                (click)="onServicesClick(['/our-services/', 'outsourcing'])" routerLinkActive="active"
+              <button ngbDropdownItem [routerLink]="['/our-services/', 'outsourcing']" routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact: true}">{{'NAV.OUTSOURCING' | translate}}</button>
-              <button ngbDropdownItem [routerLink]="['/our-services/', 'training']"
-                (click)="onServicesClick(['/our-services/', 'training'])" routerLinkActive="active"
+              <button ngbDropdownItem [routerLink]="['/our-services/', 'training']" routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact: true}">{{'NAV.TRAINING' | translate}}</button>
             </div>
           </div>
